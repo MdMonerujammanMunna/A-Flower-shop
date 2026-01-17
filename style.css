@@ -33,6 +33,31 @@ body {
 
 /* button code end */
 
+/* Heading section code start */
+.heading-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-section>h2 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+.heading-section>p {
+    max-width: 600px;
+    line-height: 30px;
+    font-size: 1.125rem;
+    color: var(--text-two-color-);
+    margin-bottom: 48px;
+}
+
+/* Heading section code end */
 
 /* shared code end */
 header {
