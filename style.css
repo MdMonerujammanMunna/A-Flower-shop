@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+}
+
+/* shared code start */
+:root {
+    --first-color: #E5547310;
+    --button-color: #E55473;
+    /* text color */
+    --text-color: #272727;
+    --text-two-color-: #27272760;
+}
+
+/* button code start */
+.btn {
+    padding: 20px 45px;
+    outline: none;
+    border: none;
+    background-color: var(--button-color);
+    font-size: 1.25rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* button code end */
+
+
+/* shared code end */
+header {
+    background-color: var(--first-color);
+}
+
+.hero-banner-container {
+    margin: 0 100px;
+    margin-bottom: 180px;
+}
+
+
+.hero-banner-text h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--text-color);
+    margin-bottom: 32px;
+}
+
+.hero-banner-text p {
+    max-width: 635px;
+    font-size: 1.125rem;
+    line-height: 30px;
+    color: var(--text-two-color-);
+    margin-bottom: 32px;
+}
+
+.hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-banner-img img {
+    width: 100%;
+    position: bottom;
+}
+
+/* responsive design code start */
+
+
+/* Extra large device code start */
+@media screen and (max-width:1200px) {
+    .hero-banner {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-banner-img {
+        margin-bottom: 80px;
+    }
+
+    .hero-banner-text button {
+        margin-bottom: 50px;
+    }
+}
+
+/* Extra large device code end */
+
+/* Medium device code start */
+
+@media screen and (max-width:768px) {}
+
+/* Medium device code end */
+
+/* Small device code start */
+@media screen and (max-width:768px) {}
+
+/* Small device code end */
+
+/* responsive design code end */
