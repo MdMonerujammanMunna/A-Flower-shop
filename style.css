@@ -19,6 +19,14 @@ body {
     --text-two-color-: #27272760;
 }
 
+/* margin */
+.hero-banner-container,
+.follower-cards,
+.emoji-container {
+    margin: 0 100px;
+    margin-bottom: 180px;
+}
+
 /* button code start */
 .btn {
     padding: 20px 45px;
@@ -62,12 +70,6 @@ body {
 /* shared code end */
 header {
     background-color: var(--first-color);
-}
-
-.hero-banner-container,
-.follower-cards {
-    margin: 0 100px;
-    margin-bottom: 180px;
 }
 
 
@@ -137,6 +139,32 @@ header {
 /* follower section design code end */
 
 
+.emoji {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-content: center;
+    background-color: #27272705;
+    border-radius: 8px;
+    column-gap: 20px;
+    padding: 86px 175px;
+}
+
+.emoji-card {
+    text-align: center;
+}
+
+.emoji-card img {
+    margin-bottom: 24px;
+}
+
+.emoji-card p {
+    font-size: 18px;
+    color: var(--text-two-color-);
+    text-wrap: nowrap;
+    font-weight: 600;
+}
+
 /* responsive design code start */
 
 
@@ -159,6 +187,14 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .emoji {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
+        column-gap: 0;
+        padding: 10px 0;
     }
 }
 
