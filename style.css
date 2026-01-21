@@ -64,7 +64,8 @@ header {
     background-color: var(--first-color);
 }
 
-.hero-banner-container {
+.hero-banner-container,
+.follower-cards {
     margin: 0 100px;
     margin-bottom: 180px;
 }
@@ -96,6 +97,46 @@ header {
     position: bottom;
 }
 
+/* follower section design code start */
+.card-pink {
+    text-align: center;
+    align-items: end;
+    justify-content: space-between;
+    gap: 24px;
+    display: flex;
+}
+
+.up-round {
+    padding: 100px 40px 0px 40px;
+    background-color: #A7216215;
+    border-radius: 300px 300px 0px 0px;
+    margin-bottom: 32px;
+}
+
+.up-round-two {
+    padding: 100px 20px 51px 20px;
+    background-color: #0597A015;
+    border-radius: 300px 300px 0px 0px;
+    margin-bottom: 32px;
+}
+
+.up-round-three {
+    padding: 100px 76px 0px 76px;
+    background-color: #477D1115;
+    border-radius: 300px 300px 0px 0px;
+    margin-bottom: 32px;
+}
+
+.card p a {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+
+}
+
+/* follower section design code end */
+
+
 /* responsive design code start */
 
 
@@ -112,6 +153,12 @@ header {
 
     .hero-banner-text button {
         margin-bottom: 50px;
+    }
+
+    .card-pink {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
