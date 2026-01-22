@@ -218,7 +218,7 @@ header {
 }
 
 /* gallery section code end */
-/*  */
+/* subscribe section code start */
 .subscribe-container {
     padding: 120px 290px;
     background: url(./Asset/last.png);
@@ -269,6 +269,45 @@ header {
     font-weight: 600;
     border-radius: 8px;
 }
+
+/* subscribe section code end */
+/* footer section code start */
+footer {
+    background-color: #111010;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    padding: 130px 0;
+    text-align: center;
+
+}
+
+.footer h2 {
+    color: var(--button-color);
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+.footer h2 span {
+    color: white;
+}
+
+.footer p {
+    width: 625px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.footer .copy {
+    color: #ffffff40;
+}
+
+/* footer section code end */
 
 /* responsive design code start */
 
