@@ -22,7 +22,8 @@ body {
 /* margin */
 .hero-banner-container,
 .follower-cards,
-.emoji-container {
+.emoji-container,
+.offer {
     margin: 0 100px;
     margin-bottom: 180px;
 }
@@ -165,6 +166,44 @@ header {
     font-weight: 600;
 }
 
+/* offer section design start */
+.offer {
+    display: flex;
+    gap: 150px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 0;
+}
+
+.offer-container {
+    background-color: #E5547310;
+
+}
+
+.offer-text {
+    text-align: center;
+}
+
+.offer-text h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 24px;
+    color: var(--text-color);
+}
+
+.offer-text h1 span {
+    color: #E55473;
+}
+
+.offer-text p {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 24px;
+    color: var(--text-two-color-);
+}
+
+/* offer section design end */
 /* responsive design code start */
 
 
@@ -195,6 +234,11 @@ header {
         row-gap: 40px;
         column-gap: 0;
         padding: 10px 0;
+    }
+
+    .offer {
+        flex-direction: column-reverse;
+        padding-top: 50px;
     }
 }
 
