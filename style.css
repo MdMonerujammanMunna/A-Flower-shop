@@ -23,7 +23,8 @@ body {
 .hero-banner-container,
 .follower-cards,
 .emoji-container,
-.offer {
+.offer,
+.gallery {
     margin: 0 100px;
     margin-bottom: 180px;
 }
@@ -204,6 +205,18 @@ header {
 }
 
 /* offer section design end */
+/* gallery section code start */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* align-content: center; */
+    justify-content: center;
+    /* justify-items: center; */
+    column-gap: 24px;
+}
+
+/* gallery section code end */
 /* responsive design code start */
 
 
@@ -240,19 +253,24 @@ header {
         flex-direction: column-reverse;
         padding-top: 50px;
     }
+
+    .gallery {
+        row-gap: 24px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 /* Extra large device code end */
 
 /* Medium device code start */
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+    .gallery {
+        row-gap: 24px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 /* Medium device code end */
-
-/* Small device code start */
-@media screen and (max-width:768px) {}
-
-/* Small device code end */
-
 /* responsive design code end */
