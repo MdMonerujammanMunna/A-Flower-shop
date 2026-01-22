@@ -24,7 +24,8 @@ body {
 .follower-cards,
 .emoji-container,
 .offer,
-.gallery {
+.gallery,
+.subscribe-container {
     margin: 0 100px;
     margin-bottom: 180px;
 }
@@ -217,6 +218,58 @@ header {
 }
 
 /* gallery section code end */
+/*  */
+.subscribe-container {
+    padding: 120px 290px;
+    background: url(./Asset/last.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.subscribe h3 {
+    font-size: 40px;
+    color: var(--text-color);
+    margin-bottom: 16px;
+}
+
+.subscribe p {
+    font-size: 18px;
+    color: var(--text-two-color-);
+    margin-bottom: 48px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.subscribe .input input[type="email"] {
+    padding: 18px 22px;
+    outline: none;
+    border: none;
+    width: 700px;
+    color: var(--text-two-color-);
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.subscribe .input .btn-sub {
+    padding: 18px 31px;
+    outline: none;
+    border: none;
+    background-color: var(--button-color);
+    /* font-size: 1.25rem; */
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
 /* responsive design code start */
 
 
@@ -259,6 +312,14 @@ header {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .input {
+        flex-direction: column;
+    }
+
+    .subscribe .input input[type="email"] {
+        width: 500px;
+    }
+
 }
 
 /* Extra large device code end */
@@ -269,6 +330,14 @@ header {
     .gallery {
         row-gap: 24px;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .input {
+        flex-direction: column;
+    }
+
+    .subscribe .input input[type="email"] {
+        width: 300px;
     }
 }
 
